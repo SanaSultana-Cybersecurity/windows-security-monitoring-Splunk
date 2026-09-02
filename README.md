@@ -110,7 +110,25 @@ The Splunk dashboard created for this project includes:
 
 ### Dashboard Screenshot
 
-*Add your Splunk dashboard screenshot here.*
+## Splunk SOC Dashboard
+
+The dashboard provides a centralized view of Windows authentication activity, including successful logons, failed logons, affected users, and source IP addresses.
+
+![SOC L1 Windows Security Monitoring Dashboard](screenshots/04-soc-l1-dashboard.png)
+
+## Investigation Evidence
+
+### Windows Failed Logon Investigation
+
+![Windows Failed Logon Investigation](screenshots/01-failed-logon-investigation.png)
+
+### Brute Force Detection
+
+![Brute Force Detection](screenshots/02-brute-force-detection.png)
+
+### Brute Force Alert
+
+![Potential Brute Force Alert](screenshots/03-brute-force-alert.png)
 
 ---
 
