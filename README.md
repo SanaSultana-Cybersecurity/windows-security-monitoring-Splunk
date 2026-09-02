@@ -181,11 +181,7 @@ Through this project, I practiced:
 * Basic brute-force detection
 * SOC alert triage# 🛡️ Windows Security Monitoring with Splunk
 
-## 📌 Project Overview
 
-This project demonstrates a hands-on SOC Analyst L1 workflow for monitoring and investigating Windows security events using **Splunk Enterprise**.
-
-The lab focuses on authentication activity, failed login attempts, successful logons, source IP analysis, and identifying suspicious patterns that may indicate a brute-force attack.
 
 ---
 
