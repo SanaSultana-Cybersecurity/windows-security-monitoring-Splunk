@@ -108,11 +108,11 @@ The dashboard provides a centralized view of Windows authentication activity, in
 
 ### Brute Force Detection
 
-![Brute Force Detection](02-brute-force-detection.png)
+![Brute Force Detection](02-Brute-Force-Detection.png)
 
 ### Brute Force Alert
 
-![Potential Brute Force Alert](/03-brute-force-alert.png)
+![Potential Brute Force Alert](03-Brute-Force-Alert.png)
 
 ## 🕵️ Investigation Workflow
 
