@@ -96,10 +96,6 @@ The Splunk dashboard created for this project includes:
 * Failed Logons by Source IP
 * Authentication activity over time
 
-### Dashboard Screenshot
-
-## Splunk SOC Dashboard
-
 The dashboard provides a centralized view of Windows authentication activity, including successful logons, failed logons, affected users, and source IP addresses.
 
 ![SOC L1 Windows Security Monitoring Dashboard](screenshots/04-soc-l1-dashboard.png)
