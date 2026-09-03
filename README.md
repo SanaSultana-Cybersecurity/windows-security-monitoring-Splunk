@@ -6,7 +6,6 @@ This project demonstrates a hands-on SOC Analyst L1 workflow for monitoring and 
 
 The lab focuses on authentication activity, failed login attempts, successful logons, source IP analysis, and identifying suspicious patterns that may indicate a brute-force attack.
 
----
 
 ## 🎯 Objectives
 
@@ -19,8 +18,6 @@ The lab focuses on authentication activity, failed login attempts, successful lo
 * Build a SOC monitoring dashboard
 * Practice the incident investigation process
 
----
-
 ## 🖥️ Lab Environment
 
 | Component                 | Technology                  |
@@ -32,20 +29,17 @@ The lab focuses on authentication activity, failed login attempts, successful lo
 | Virtualization            | VMware                      |
 | Log Source                | Windows Security Event Logs |
 
----
 
 ## 🔎 Windows Event IDs Monitored
 
-| Event ID | Description                                |
-| -------- | ------------------------------------------ |
-| 4624     | Successful account logon                   |
-| 4625     | Failed account logon                       |
-| 4634     | Account logoff                             |
-| 4648     | Logon attempted using explicit credentials |
+| **Event ID** | **Description**          |
+| ------------ | ------------------------ |
+| **4624**     | Successful account logon |
+| **4625**     | Failed account logon     |
+
 
 The main focus of this project is **Event ID 4625**, which records failed logon attempts.
 
----
 
 ## 🔍 Splunk Investigation
 
@@ -61,7 +55,6 @@ To identify users experiencing failed logons:
 index=* EventCode=4625
 | stats count by Account_Name
 | sort - count
-```
 
 To analyze failed logons by source IP:
 
@@ -69,7 +62,6 @@ To analyze failed logons by source IP:
 index=* EventCode=4625
 | stats count by src_ip
 | sort - count
-```
 
 To investigate successful logons:
 
@@ -77,9 +69,7 @@ To investigate successful logons:
 index=* EventCode=4624
 | stats count by Account_Name
 | sort - count
-```
 
----
 
 ## 🚨 Brute-Force Detection
 
@@ -94,8 +84,6 @@ As a SOC Analyst, I would investigate:
 5. Whether successful login occurred after failures
 6. Whether the source IP is known or suspicious
 7. Whether the activity affects multiple accounts
-
----
 
 ## 📊 SOC Dashboard
 
@@ -130,8 +118,6 @@ The dashboard provides a centralized view of Windows authentication activity, in
 
 ![Potential Brute Force Alert](screenshots/03-brute-force-alert.png)
 
----
-
 ## 🕵️ Investigation Workflow
 
 The investigation follows a basic SOC L1 process:
@@ -140,7 +126,6 @@ The investigation follows a basic SOC L1 process:
 
 For suspicious authentication activity, the analyst should correlate multiple events instead of relying on a single failed login.
 
----
 
 ## 🛡️ SOC Response
 
@@ -154,7 +139,6 @@ Depending on the investigation results, possible response actions include:
 * Escalate confirmed incidents to the appropriate security team
 * Document investigation findings
 
----
 
 ## 🧠 MITRE ATT&CK Mapping
 
@@ -168,7 +152,6 @@ Sub-technique:
 
 The mapping depends on the evidence identified during the investigation.
 
----
 
 ## 📚 Key Learnings
 
@@ -181,10 +164,6 @@ Through this project, I practiced:
 * Basic brute-force detection
 * SOC alert triage# 🛡️ Windows Security Monitoring with Splunk
 
-
-
----
-
+Author 
 **Sana Sultana**
-
 Aspiring SOC Analyst | Cybersecurity | SIEM | Splunk
